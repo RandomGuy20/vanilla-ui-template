@@ -1,5 +1,3 @@
-import hdmiImage from '../assets/images/hdmi-cable.png';
-import wonkyDisplay from '../assets/images/tv-app.png';
 import '../css/videopage.css';
 
 

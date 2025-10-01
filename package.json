@@ -1,7 +1,7 @@
 {
   "name": "americansound-vanilla-template",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": 
   {
     "americansound-vue-template": "bin/create-project.js"
@@ -14,10 +14,9 @@
     "dist/",
     "webxpanel/",
     "index.html",
+    "offline.html",
     "vite.config.js",
-    "bin/",
-    "README.md",
-    "BasicVueDescription.md"
+    "bin/"
   ],
   "description": "This is a starter template for the American Sound team",
   "author": "Josh Guertin",
@@ -27,7 +26,7 @@
   "repository": 
   {
     "type": "git",
-    "url": "git+https://github.com/RandomGuy20/vue-ui-template.git"
+    "url": "https://github.com/RandomGuy20/vanilla-ui-template"
   },
   "scripts": 
   {
