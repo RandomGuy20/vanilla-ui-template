@@ -1,0 +1,49 @@
+
+
+
+
+// Create Global variables for background, active, inactive, font colors, font size, above this line using $ sign before variable name
+
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+
+
+.subpage-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+}
+
+
+.visible
+{
+    display: flex;
+}
+
+
+.hidden
+{
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+

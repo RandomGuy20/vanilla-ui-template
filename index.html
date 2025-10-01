@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vite App</title>
+
+      <!-- 
+    We need to link the manifest.json to the entry point HTML.
+    manifest.json requirements for PWA functionality are found here:
+    https://developers.google.com/web/fundamentals/web-app-manifest/
+    https://developer.mozilla.org/en-US/docs/Web/Manifest
+  -->
+  <link rel="manifest" href="./manifest.json">
+  <script src="./src//PWA-Xpanel/registerServiceWorker.js"></script>
+
+    <!-- Reference the UMD library from the public directory -->
+    <script src="/cr-com-lib.js"></script>
+
+    <!-- Reference the worker script -->
+     <script type="module" src="/d4412f0cafef4f213591.worker.js"></script>
+    <!-- Reference the main script -->
+     <script type="module" src="/index.js"></script> 
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- This is for the tsw -->
+    <script type="module" src="/src/main.js"></script> 
+
+    <!-- This is for the xpanel -->
+    <script type="module" src="/src/webxpanel.js"></script>
+
+
+    <!-- This is for the PWA Panel -->
+     <!-- <script type="module" src="/src/PWA-Xpanel/powerappsxpanel.js" ></script> -->
+  </body>
+</html>

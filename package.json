@@ -1,0 +1,77 @@
+{
+  "name": "americansound-vanilla-template",
+  "private": false,
+  "version": "1.0.0",
+  "bin": 
+  {
+    "americansound-vue-template": "bin/create-project.js"
+  },
+  "files": 
+  [
+    "src/",
+    "public/",
+    "TSW/",
+    "dist/",
+    "webxpanel/",
+    "index.html",
+    "vite.config.js",
+    "bin/",
+    "README.md",
+    "BasicVueDescription.md"
+  ],
+  "description": "This is a starter template for the American Sound team",
+  "author": "Josh Guertin",
+  "license": "MIT",
+  "main": "index.js",
+  "type": "module",
+  "repository": 
+  {
+    "type": "git",
+    "url": "git+https://github.com/RandomGuy20/vue-ui-template.git"
+  },
+  "scripts": 
+  {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sass:watch": "sass --watch src/scss:src/css",
+    "build:crestron": "vite build --base ./",
+    "build:touchpanel": "ch5-cli archive -p projectTSW -d dist -o TSW",
+    "build:webxpanel": "ch5-cli archive -p projectWebXpanel -d dist -o webxpanel ",
+    "build:all:onestep": "npm run build:crestron && npm run build:webxpanel && npm run build:touchpanel",
+    "one-step": "npm run build:crestron && npm run build:archive",
+    "deploy:webxpanel": "ch5-cli deploy -p -H 192.168.1.163 -t web webxpanel/exampleWebXPanel.ch5z",
+    "deploy:panel": "ch5-cli deploy -p -H 192.168.1.17 -t touchscreen TSW/exampleTSW.ch5z --slow-mode",
+    "create-project": ""
+  },
+
+  "peerDependencies":
+{
+    "@crestron/ch5-crcomlib": "^2.16.0",
+    "@crestron/ch5-utilities": "^0.1.52",
+    "@crestron/ch5-webxpanel": "^2.8.0",
+    "node": "^22.20.0",
+    "sass": "^1.89.2",
+    "scss": "^0.2.4",
+    "vite-plugin-singlefile": "^2.2.0",
+    "vite-plugin-static-copy": "^3.0.0"
+  },
+  "dependencies": 
+  {
+    "@crestron/ch5-crcomlib": "^2.16.0",
+    "@crestron/ch5-utilities": "^0.1.52",
+    "@crestron/ch5-webxpanel": "^2.8.0",
+    "node": "^22.20.0",
+    "sass": "^1.89.2",
+    "scss": "^0.2.4",
+    "vite-plugin-singlefile": "^2.2.0",
+    "vite-plugin-static-copy": "^3.0.0",
+    "vite": "^6.3.5"
+  },
+  "devDependencies": 
+  {
+    "vite": "^6.3.5"
+  }
+}
+
+
