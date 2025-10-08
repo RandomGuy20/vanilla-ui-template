@@ -1,5 +1,7 @@
 # American Sound Vanilla JS Template
 
+Use this command to set up the project: `npx americansound-vanilla-template <insert project name>`
+
 # This is a Vanilla template that will automatically set up the following
 ## 1. Your dist folder
 ## 2. Your Public folder
